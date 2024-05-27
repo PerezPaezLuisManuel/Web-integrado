@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : 21 abr. 2024, 17:55:06
+    Created on : 25 may. 2024, 18:30:23
     Author     : lurto
 --%>
 
@@ -9,51 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Web Integrado</title>
+        <link href="./css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <title>Inicio</title>
     </head>
     <body>
-        <h2>QUEJAS Y RECLAMOS</h2>
+        <br>
+        <br>
         <div class="container">
-            <form action="" method="post" class="form-group">
-                <label for="labelDni"><b>DNI:</b></label><br>
-                <input type="number" name="txtDni" id="txtDni" class="form-control" required>
-                
-                <br>
-                <br>
-                
-                <label for="labelNombre"><b>Nombres:</b></label><br>
-                <input type="text" name="txtNombre" id="txtNombre" class="form-control" required>
-                
-                <br>
-                <br>
-                
-                <label for="labelApellidos"><b>Apellidos:</b></label><br>
-                <input type="text" name="txtApellidos" id="txtApellidos" class="form-control" required>
-                
-                <br>
-                <br>
-                
-                <label for="labelTelefono"><b>Teléfono:</b></label><br>
-                <input type="number" name="txtTelefono" id="txtTelefono" class="form-control" required>
-                
-                <br>
-                <br>
-                
-                
-                <label for="labelDescripcion"><b>Descripción:</b></label><br>
-                <textarea class="form-control" rows="8" cols="21" id="txtAreaDescripcion"></textarea>
-                
-                <br>
-                <br>
-                
-                <button type="button" name="btnEnviar" id="btnEnviar" class="btn btn-primary" onclick="alerta()">Enviar</button>
-                
-                <script>
-                    function alerta(){
-                        window.alert('Reclamo enviado correctamente');
-                    }
-                </script>
-            </form>
+            <!-- Botón con referencia a la pestaña "listar" en donde se listan los registros de los usuarios -->
+            <a class="btn btn-success btn-lg" href="Controlator?accion=listar">Listar Persona</a>
         </div>
     </body>
 </html>
